@@ -29,9 +29,9 @@ function App() {
 
   return (
     <>
-      <div className='bg-green-300 rounded-md text-2xl mx-12 my-3 p-3 drop-shadow-xl'>
+      <div className='bg-green-300 rounded-md text-lg md:text-2xl mx-2 lg:mx-12 my-3 p-3 drop-shadow-xl'>
         <form onSubmit={handleOnSubmit} className=''>
-          <input placeholder='type here' value={nextNote} onChange={e => setNextNote(e.target.value)} className='mr-2 p-1 hidden sm:inline'></input>
+          <input placeholder='type here' value={nextNote} onChange={e => setNextNote(e.target.value)} className='mr-2 p-1 sm:inline'></input>
           <button className='rounded-lg items-center hover:bg-slate-300 p-3'>Add</button>
         </form>
       </div>
